@@ -1,4 +1,14 @@
 
+terraform {
+  cloud {
+    organization = "karei-training"
+
+    workspaces {
+      name = "test1"
+    }
+  }
+}
+
 provider "aws" {
   profile = "terraform"
   region = "ap-northeast-1"
